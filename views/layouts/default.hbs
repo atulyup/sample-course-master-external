@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Team Cloud Chronicles Website</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="container">
+      <h1>Welcome to <b>Cloud Chronicles</b> application</h1>
+    {{{body}}}
+</div>
+<div class="container">
+ <h2>Add an event</h2>
+<div class="row" style="width:100%">
+ 
+    <form action="/event" method="post">
+    <p>Event <input name="title" type="text" /><br />
+    <p>Name <input name="description" type="text" /><br />
+       {{!-- title: <input name="title" type="text" /> <br />
+       description: <input name="description" type="text" /> <br />
+       <br /> --}}
+        {{!-- <input type="submit" name="submit" value="submit" /> --}}
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+<div class="row">
+    <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Thank you for Visiting!</h5>
+    <p class="card-text"></p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+  </div>
+</body>
+</html>
